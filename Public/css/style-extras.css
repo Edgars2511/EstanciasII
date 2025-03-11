@@ -1,0 +1,362 @@
+:root{
+    --principal:#2B308B;
+    --border: .1rem solid rgba(0,0,0,.12);
+    --prueba: 1px solid red;
+    --fuente: white;
+    --background: #F8F9FD;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Calibri;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 71%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+.TitleIndex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    background-color: var(--principal);
+    text-align: center;
+  }
+  
+  
+  .TitleIndex .Title-container {
+    text-align: left; 
+    height: calc(100vh - 5rem);
+    width: 50%;
+    padding: 0rem 10rem;
+    display: flex;
+    align-items: center;
+    font-size: 55px;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    white-space: pre-line;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .TitleIndex .contenedor-alumnos { 
+
+    height: calc(100vh - 5rem);
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .TitleIndex .contenedor-alumnos .imagen{
+    width: 100%;
+    height: 65%;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-right: 5rem;
+  }
+  .TitleIndex .contenedor-alumnos .imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
+
+.DescExtra{
+    width: 100%;
+    text-align: justify;
+    padding: 3rem 9%;
+}
+.DescExtra p{
+    font-size: 2rem;
+}
+
+.DescExtratext{
+    max-width: 80%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.DescExtratext h1{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.informacion{
+    width: 100%;
+    background-color: #CEDEFF;
+    padding: 2rem 9%;
+    align-items: center;
+    text-align: center;
+}
+
+.informacion .HorarioEnt-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.informacion .HorarioEnt-cont .horario{
+    width: calc(70% - 3rem);
+}
+
+.informacion .HorarioEnt-cont .horario h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 5rem;
+}
+.informacion .HorarioEnt-cont .horario .horario-imagen {
+    position: relative;
+}
+.informacion .HorarioEnt-cont .horario .horario-imagen .editar {
+    position: absolute;
+    /*bottom: 1.5rem;*/
+    background-color: var(--principal);
+    border-radius: 50%; 
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0;
+    
+}
+.informacion .HorarioEnt-cont .horario .horario-imagen:hover .editar {
+    opacity: 1;
+    
+}
+
+.informacion .HorarioEnt-cont .horario .horario-imagen .imagen{
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s; 
+    height: 40rem;
+    object-fit: cover;
+}
+
+.informacion .HorarioEnt-cont .horario .horario-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.informacion .HorarioEnt-cont  .entrenador{
+    width: 30%;
+}
+.informacion .HorarioEnt-cont  .entrenador .titulo{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 5rem;
+}
+
+.informacion .HorarioEnt-cont  .entrenador .cardent {
+    width: 100%;
+    height: calc(100% - 6rem);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibri;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s; 
+    padding: 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+
+.informacion .HorarioEnt-cont  .entrenador .cardent .entimg-container{
+    border-radius: 100rem;
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+}
+.informacion .HorarioEnt-cont  .entrenador .cardent .entimg-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100rem;
+}
+
+.informacion .HorarioEnt-cont  .entrenador .cardent .NombreEnt{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.informacion .HorarioEnt-cont  .entrenador .cardent .DescEnt{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 100;
+    width: 100%;
+}
+.informacion .HorarioEnt-cont  .entrenador .cardent .ContactoEnt{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 25px;
+    color: var(--principal);
+    font-weight: bolder;
+    width: 100%;
+}
+
+
+
+.informacion button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5A81FA;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 2.5rem;
+}
+
+.informacion button:hover {
+    background-color: #656A7E;
+}
+
+
+/*slider*/
+.swiper-container {
+    width: 100%; 
+    position: relative;
+    overflow: hidden;
+    max-height: 41rem;
+}
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0;
+  position: absolute;
+  color: var(--principal);
+  top: 50%;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after  {
+    font-size: 10px; /* Tamaño del ícono */
+    color: var(--principal); /* Cambiar el color del ícono */
+}
+
+.swiper-container:hover .swiper-button-next,
+.swiper-container:hover .swiper-button-prev {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.swiper-slide {
+    flex: 0 0 100%;
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+    .TitleIndex .Title-container{
+        font-size: 45px;
+    }
+  }
+
+@media (max-width: 950px) {
+    .TitleIndex .contenedor-alumnos .imagen{
+        height: 25%;
+    }
+    .TitleIndex .Title-container{
+        font-size: 15px;
+        padding: 0rem 4rem;
+    }
+    .informacion .HorarioEnt-cont .entrenador .titulo {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    .informacion .HorarioEnt-cont .horario h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .NombreEnt h1{
+        font-size: 12px;
+    }
+    .DescEnt{
+        font-size: 10px;
+    }
+    .ContactoEnt{
+        font-size: 9px;
+    }
+    .NombreEnt{
+        margin-top: 10px;
+    }
+    
+    .DescEnt{
+        margin-top: 15px;
+    }
+    .ContactoEnt{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .informacion button {
+        padding: 5px 6px;
+        border: none;
+        border-radius: 20px;
+        background-color: #656A7E;
+        color: #ffffff;
+        font-size: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 2.5rem;
+    }
+    .entimg-container img {
+        border-radius: 300px;
+        width: 10rem;
+        height: auto;
+    }
+
+    .informacion .HorarioEnt-cont {
+        flex-wrap: wrap;
+    }
+    .informacion .HorarioEnt-cont .horario{
+        width: 100%;
+    }
+    .informacion .HorarioEnt-cont .entrenador{
+        width: 100%;
+    }
+
+    .informacion .HorarioEnt-cont .entrenador .cardent {
+        padding: 2rem 2rem;
+        overflow-y: auto;
+    }
+    .informacion .HorarioEnt-cont .horario img {
+        width: 100%;
+        height: 250px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+}

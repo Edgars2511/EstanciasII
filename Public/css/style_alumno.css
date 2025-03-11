@@ -1,0 +1,662 @@
+:root{
+    --principal:#2B308B;
+    --border: .1rem solid rgba(0,0,0,.12);
+    --prueba: 1px solid red;
+    --fuente: white;
+    --background: #F8F9FD;
+    /*color:#333*/
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Calibri;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 71%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color: var(--background);
+}
+
+
+.miga{
+    padding: 0rem 5%;
+    background-color: 333333;
+}
+.miga a{
+    font-size: 20px;
+    color: #44C7FF;
+    line-height: 5rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+.miga p span{
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: auto;
+}
+
+
+
+
+
+
+.cont{
+    justify-content: center;
+	align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem 0rem; 
+    padding:3rem 12%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.cont .formulario{
+    background-color: white;
+    width: 100%;
+    min-height: 50rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    padding: 3rem 8rem;
+}
+
+.cont .formulario h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color:#333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cont .formulario form label {
+    display: block;
+    margin: 8px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.cont .formulario form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 0.3rem;
+    box-shadow: 0 .3rem 1.3rem rgba(0,0,0,.02);
+}
+
+.cont .formulario form input[type="text"]:hover {
+    border-color: var(--principal);
+}
+
+.cont .formulario form input[type="submit"] {
+    color: white;
+    background-color: var(--principal);
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    border-radius: 15rem;
+    cursor: pointer;
+}
+
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0; 
+	background: #ffff;
+	font-size: 1.1rem;
+	color: #999;
+	font-family:'Quicksand', sans-serif;
+	border: 1px solid rgb(228, 228, 228);
+    box-shadow: 0 .3rem 1.3rem rgba(0,0,0,.02);
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.content-select select:hover{
+	border-color: var(--principal);
+}
+
+.cont .alumno{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cont .perfil{
+    background-color: white;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    padding: 2rem 3rem;
+    position: sticky;
+    top: 50;
+}
+
+.cont .perfil .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    margin: 0;
+    position: relative; /* Se necesita para posicionar elementos hijos absolutamente */
+}
+
+.cont .perfil .imagen .cont{
+    justify-content: center;
+    align-items: flex-start; /* Para alinear el texto del enlace con la parte inferior de la imagen */
+    max-height: 16rem;
+    max-width: 16rem;
+    min-width: 16rem;
+    min-height: 16rem;
+    padding: 0;
+}
+
+.cont .perfil .imagen .cont .img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%; /* Ajustar el radio a la mitad para mantener la forma circular */
+    object-fit: cover;
+}
+.cont .perfil .imagen .cont .img img {
+    width: 100%;
+    height: 100%;
+}
+.cont .perfil .editbut-cont {
+    color: white;
+    background-color: var(--principal);
+    font-size: 12px;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #5A81FA;
+}
+.cont .perfil a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.cont .perfil .editar {
+    position: absolute;
+    bottom: 1.5rem;
+    background-color: var(--principal);
+    border-radius: 50%; /* Hacer el enlace un círculo */
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 12rem;
+}
+
+
+.cont .perfil .informacion h1{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin: 1.5rem 0rem;
+}
+
+.cont .perfil .inf{
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    padding: 1rem 0rem;
+}
+.cont .perfil .inf h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.cont .perfil .inf p{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+
+.cont .informacion-completa{
+    min-width: 67%;
+    max-width: 67%;
+    position: relative;
+}
+
+
+
+.cont .informacion-completa .info{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    padding: 4rem 6rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.cont .informacion-completa .info h1{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.cont .informacion-completa .inf{
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    padding: 1rem 0rem;
+}
+.cont .informacion-completa .inf h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.cont .informacion-completa .inf p{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+
+.cont .informacion-completa .papeleria{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    padding: 4rem 6rem 0rem 6rem;
+    position: relative;
+}
+.cont .informacion-completa .papeleria h1{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.cont .informacion-completa .papeleria .cont{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+.cont .informacion-completa .papeleria .cont .doc{
+    display: flex;
+    width: calc(50% - 1rem);
+    flex-wrap: wrap;
+    border:1px solid rgba(0,0,0,.04);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.cont .informacion-completa .papeleria .cont .doc h1{
+    font-size: 1.5rem;
+    text-align: start;
+    width: 100%;
+}
+.cont .informacion-completa .papeleria .cont .doc .pdf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cont .informacion-completa .papeleria .cont .doc .pdf img{
+    height: 6rem;
+    width: auto;
+}
+.cont .informacion-completa .papeleria .cont .doc .pdf .nombre{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont .informacion-completa .papeleria .cont .doc .pdf .nombre a{
+    font-size: 1.2rem;
+    color: #333;
+}
+.cont .informacion-completa .papeleria .cont .doc .pdf .nombre a:hover{
+    text-decoration: underline;
+}
+
+.cont .informacion-completa .editar{
+    text-align: center;
+    margin: 2rem 0rem 3rem 0rem;
+    width: 100%;
+    display: flex;
+}
+.cont .informacion-completa .editar a{
+    color:  white;
+    background-color: var(--principal);
+    font-size: 1.5rem;
+    padding: 8px 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 100%;
+}
+
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+scroll-container { 
+    position: relative;
+    background-color: white;
+    display: block;
+    padding: 0%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    
+}
+
+scroll-page {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+#modal{
+    padding-right: 1.5rem;
+    height: 27rem;
+}
+#navlateral{
+    height: 90vh;
+}
+
+
+/* media queries  */
+@media (max-width:1200px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    header .icons a{
+        font-size: 2rem;
+    }
+
+
+}
+
+@media (max-width:900px){
+    .header .logo #navlat{
+        display: none;
+    }
+    .header .titulo{
+        position: relative;
+        left: 0%;
+    }
+
+    .nav{
+        width: 50%;
+    }
+    .nav .departamentos{
+        margin: 2rem;
+    }
+
+    .cont{
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        padding:2rem 7rem;
+    }
+    .cont .publicacion .imagenes img{
+        height: 20rem;
+    }
+}
+
+@media (max-width:700px){
+    .header .titulo h1{
+        font-size: 2.5rem;
+    }
+    .header .titulo img{
+        height: 4.4rem;
+    }
+    .header .iconos a{
+        font-size: 1.7rem;
+    } 
+    .dropdownUser_content .icon a{
+        font-size: 5rem;
+    }
+
+    .cont{
+        padding:2rem 12rem;
+    }
+    .cont .principal .publicacion .imagen{
+        height: 25rem;
+    }
+
+    .cont .secciones .publicaciones .publicacion{
+        min-width: 100%; 
+    }
+
+    .cont .secciones .publicaciones .publicacion .imagen{
+        height: 25rem;
+    } 
+    
+    .swiper-container {
+        height: 25rem;
+    }
+
+    
+}
+
+@media (max-width:650px){
+    .nav{
+        margin-top: 7rem;
+    }
+    .header{
+        height: 7rem;
+    }
+
+    .cont{
+        padding:2rem 10rem;
+    }
+    .dropdownUser_content .icon{
+        height: 10rem;
+        width: 10rem;
+    }
+    .dropdownUser_content .usuario p{
+        margin-bottom: 1rem;
+    }
+
+
+    .cont .encabezado h1{
+        font-size: 3rem;
+    }
+    
+
+}
+@media (max-width:550px){
+    html{
+        font-size: 55%;
+    }
+    .cont{
+        padding:2rem 8rem;
+    }
+
+}
+
+
+@media (max-width:400px){
+    
+    .nav{
+        width: 70%;
+    }
+    
+    
+    .cont{
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        padding:2rem 2.5rem;
+    }
+}
+
+@media (max-width:350px){
+    
+    .nav{
+        width: 75%;
+    }
+    
+
+}
+
+@media (max-width:300px){
+    
+    .nav{
+        width: 80%;
+    }
+    .cont{
+        padding:2rem 2rem;
+    }
+
+}
+
+@media (max-width: 600px){
+    .cont .alumno .perfil {
+        padding: 2rem 1.8rem;
+    }
+    .cont .informacion-completa .info {
+        padding: 2rem 1.8rem;
+    }
+    .cont .informacion-completa .papeleria {
+        padding: 2rem 1.8rem;
+    }
+
+    .cont .perfil .imagen {
+        display: flex;
+        justify-content: center;
+    }
+    .cont .perfil .informacion h1 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin: .2rem 0rem;
+    }
+    .cont .perfil .inf {
+        border-bottom: 0.1rem solid rgba(0,0,0,.1);
+        padding: 0.2rem 0rem;
+    }
+    .cont .perfil .inf h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 3px;
+    }
+    .cont .perfil .inf p {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .cont .perfil .editar a {
+        color: white;
+        background-color: var(--principal);
+        font-size: 1rem;
+        width: 100%;
+        padding: 0px 0rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .cont .perfil .editbut-cont {
+        margin-top: 1rem;
+        font-size: 10px;
+        padding: 0.8rem 0.8rem;
+    }
+    .cont .informacion-completa .info h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 0.2rem;
+    }
+    .cont .informacion-completa .inf h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+    .cont .informacion-completa .inf p {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .cont .informacion-completa .info .editar a {
+        font-size: 11px;
+        padding: 6px 1.5rem;
+    }
+    .cont .informacion-completa .papeleria .editar {
+        text-align: center;
+        width: 100%;
+    }
+    .cont .informacion-completa .papeleria .editar a {
+        font-size: 11px;
+        padding: 6px 1.5rem;
+    }
+    .cont .informacion-completa .info .editar {
+        text-align: center;
+        margin-top: 1.2rem;
+        width: 100%;
+    }
+
+    @media(max-width: 500px){
+        .cont .informacion-completa .papeleria table td {
+            border-bottom: 0.1rem solid rgba(0,0,0,.1);
+            padding: 0.2rem 0rem;
+        }
+        .cont .informacion-completa .papeleria table td .pdf {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+        .pdf img {
+            width: 20%; /* ajusta el ancho según tus necesidades */
+        }
+    }
+    @media (max-width: 400px){
+
+        .cont .perfil {
+            background-color: white;
+            width: 35%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 0.1rem solid rgba(0,0,0,.1);
+            padding: 2rem 3rem;
+            position: sticky;
+            top: 50;
+        }
+        .cont .perfil .informacion h1 {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bolder;
+            margin: 0.2rem 0rem;
+        }
+        .cont .perfil .inf h2 {
+            font-size: .8rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        .cont .perfil .inf p {
+            font-size: .75rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+:root{
+    --principal:#2B308B;
+    --border: .1rem solid rgba(0,0,0,.12);
+    --prueba: 1px solid red;
+    --fuente: white;
+    --background: #F8F9FD;
+    /*color:#333*/
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Calibri;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+footer{
+    min-width: 100%;
+    margin-top: 2rem;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--principal); /* Este es un color azul claro. */
+    width: 100%; 
+    padding: 3rem 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 19px;
+    border-radius: 100rem;
+}
+.logo-container img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    cursor: pointer;
+}
+.images-container {
+    display: flex; /* Hace que los elementos hijos se alineen en una fila */
+    justify-content: flex-start; /* Alinea los elementos hijos al inicio del contenedor */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    gap: 20px; /* Añade espacio entre los elementos hijos */
+    margin-bottom: 15px;
+}
+
+
+.images-container img {
+    width: auto; /* Ajusta el ancho de las imágenes al 100% del contenedor padre */
+    height: auto; /* Ajusta la altura automáticamente para mantener las proporciones de la imagen */
+    margin: 0 auto; /* Centra las imágenes */
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.image-button {
+    border: none;
+    margin: 0 auto; /* Centra las imágenes */
+    transition: transform 0.3s ease; /* Añade una transición suave a la transformación */
+    border-radius: 100rem;
+    padding: 0.6rem;
+    background: #5A81FA;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.image-button:hover {
+    transform: scale(1.2); /* Aumenta gradualmente el tamaño del botón cuando se pasa el mouse sobre él */
+}
+
+.images-container img {
+    width: 24px;
+    height: auto;
+    margin: 0 auto;
+}
+.text-container {
+    background: linear-gradient(to right, transparent, white, transparent);
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: center top;
+    width: 80%;
+    text-align: center; /* Centra el texto */
+    padding-top: 20px;
+}
+.text-container a {
+    text-decoration: none; /* Elimina la línea debajo del enlace */
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+    font-family: 'Calibri', sans-serif; /* Cambia la fuente a Calibri */
+    font-weight: bold; /* Hace el texto en negrita */
+    color: white;
+}
